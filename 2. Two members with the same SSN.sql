@@ -24,7 +24,7 @@ indexed_values AS (
 SELECT *,
   CASE
     WHEN conflicting_user_id = 'None' THEN 'no user id'
-    ELSE 'https://crm.healthjoy.com/pha/crm' || conflicting_user_id
+    ELSE 'https://crm.***.com/pha/crm' || conflicting_user_id
   END AS crm_link
 FROM (
   SELECT
