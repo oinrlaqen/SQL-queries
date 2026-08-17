@@ -1,3 +1,6 @@
+-- Query extracts info from the import logs using substring function
+-- Needed to process different people who have the same SSNs
+
 WITH filtered_block AS (
   SELECT
     element -> 'members' AS members_list,
