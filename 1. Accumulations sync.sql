@@ -1,3 +1,6 @@
+-- Query to filter people by they deductions amount (money spent on healthcare)
+-- Based on CTE ("with" clause) + window function "row_number()"
+
 WITH p AS
   
   (SELECT i.*,
